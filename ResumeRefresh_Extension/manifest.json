@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "ResumeRefresh",
+  "version": "2.1.1",
+  "description": "ResumeRefresh personalizes a resume for a job description.",
+  "permissions": [
+    "storage",
+    "downloads"
+  ],
+  "host_permissions": [
+    "http://localhost:8000/*",
+    "http://127.0.0.1:8000/*",
+    "https://script.google.com/*",
+    "https://script.googleusercontent.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "ResumeRefresh",
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "open-extension": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y"
+      },
+      "description": "Open ResumeRefresh"
+    }
+  }
+}

@@ -1,52 +1,101 @@
+
 """
-EDIT THIS FILE TO CHANGE THE DEFAULT DAILY TASKS.
+FlexiTarget - Daily Study Tasks
+Day 1: Class 12 Commerce with Mathematics
 
-Each task is a dictionary with:
-- subject: subject name
-- title: what the student should do
-- minutes: estimated time
-- url: optional trusted resource link
-
-Replace the sample links with links to the exact videos or official resources
-you want your students to use. These are editable starter examples.
+Total focused study time: 360 minutes (6 hours).
+Add your own video and study resource links in the URL fields.
 """
 
 DAY_1_TASKS = [
-    {
-        "subject": "Accountancy",
-        "title": "Revise one topic from your current chapter and solve 10 questions.",
-        "minutes": 60,
-        "url": "https://www.cbse.gov.in/"
-    },
-    {
-        "subject": "Economics",
-        "title": "Watch one concept video for a topic you have not fully understood.",
-        "minutes": 45,
-        "url": "https://www.youtube.com/"
-    },
-    {
-        "subject": "Business Studies",
-        "title": "Read one section of your current chapter and make short notes.",
-        "minutes": 45,
-        "url": "https://ncert.nic.in/"
-    },
-    {
-        "subject": "English",
-        "title": "Practise one writing question or solve 5 questions from a literature chapter.",
-        "minutes": 40,
-        "url": "https://cbseacademic.nic.in/"
-    },
+
     {
         "subject": "Mathematics",
-        "title": "Solve 10 questions from a topic you are currently studying.",
-        "minutes": 60,
-        "url": "https://ncert.nic.in/"
+        "title": (
+            "Revise the Integrals chapter. Watch the 20-minute "
+            "revision video. Revise important formulas and methods "
+            "of integration. Solve at least 5 questions."
+        ),
+        "minutes": 30,
+        "url": ""
     },
+
+    {
+        "subject": "Mathematics",
+        "title": (
+            "Applications of Integrals: Watch a one-shot lecture "
+            "with a total duration of more than 2 hours. Today's "
+            "target is to complete approximately half the lecture. "
+            "Recommended: Usankh's lecture. Make notes alongside "
+            "the lecture or immediately afterwards."
+        ),
+        "minutes": 90,
+        "url": ""
+    },
+
+    {
+        "subject": "Business Studies",
+        "title": (
+            "Revise Chapter 1: Nature and Significance of Management. "
+            "Learn the meaning, characteristics, objectives, importance, "
+            "levels and functions of management. Write answers to "
+            "3 important exam-style questions."
+        ),
+        "minutes": 45,
+        "url": ""
+    },
+
+    {
+        "subject": "English Core",
+        "title": (
+            "Revise Flamingo chapter 'The Last Lesson'. Read the "
+            "chapter or its summary. Revise important characters, "
+            "themes and events. Practise 2 extract-based questions "
+            "and write one short-answer response."
+        ),
+        "minutes": 40,
+        "url": ""
+    },
+
+    {
+        "subject": "Accountancy",
+        "title": (
+            "Revise Accounting for Partnership Firms: Fundamentals. "
+            "Focus on interest on capital, interest on drawings, "
+            "partner's salary, commission and profit-sharing ratio. "
+            "Solve at least 5 numerical questions."
+        ),
+        "minutes": 60,
+        "url": ""
+    },
+
+    {
+        "subject": "Economics",
+        "title": (
+            "Revise Macroeconomics: National Income and Related "
+            "Aggregates. Focus on GDP, GNP, NDP and NNP. Revise "
+            "domestic income and national income concepts. "
+            "Practise at least 4 numerical questions."
+        ),
+        "minutes": 50,
+        "url": ""
+    },
+
+    {
+        "subject": "Practice & Assessment",
+        "title": (
+            "Choose your weakest subject and solve 5 to 8 CBSE "
+            "previous-year questions under timed conditions. "
+            "Check your answers and note down your mistakes."
+        ),
+        "minutes": 45,
+        "url": ""
+    }
+
 ]
 
-# Optional additional tasks shown when the student asks for more work.
-EXTRA_TASKS = [
-    {"subject": "Revision", "title": "Revise yesterday's notes for 20 minutes.", "minutes": 20, "url": ""},
-    {"subject": "Practice", "title": "Solve 5 extra questions from your weakest subject.", "minutes": 25, "url": ""},
-    {"subject": "Testing", "title": "Attempt a short timed test and mark your mistakes.", "minutes": 30, "url": ""},
-]
+
+# Additional tasks available to the planner.
+# The planner can use this list when the student requests more tasks.
+
+EXTRA_TASKS = []

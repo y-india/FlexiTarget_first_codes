@@ -17,7 +17,7 @@ DAY_1_TASKS = [
             "of integration. Solve at least 5 questions."
         ),
         "minutes": 30,
-        "url": ""
+        "url": "https://youtu.be/n5lp-jGWoz4?si=xKagWROhiTkcJa1E"
     },
 
     {
@@ -29,20 +29,18 @@ DAY_1_TASKS = [
             "Recommended: Usankh's lecture. Make notes alongside "
             "the lecture or immediately afterwards."
         ),
-        "minutes": 90,
-        "url": ""
+        "minutes": 120,
+        "url": "https://youtu.be/lnR343-9vFY?si=Es0GdEwXGke9_sM7"
     },
 
     {
         "subject": "Business Studies",
         "title": (
             "Revise Chapter 1: Nature and Significance of Management. "
-            "Learn the meaning, characteristics, objectives, importance, "
-            "levels and functions of management. Write answers to "
-            "3 important exam-style questions."
+            "try solving chapter one questions from this last year paper."
         ),
         "minutes": 45,
-        "url": ""
+        "url": "https://www.cbse.gov.in/cbsenew/question-paper/2026/XII/Business_Studies.zip"
     },
 
     {
@@ -60,13 +58,13 @@ DAY_1_TASKS = [
     {
         "subject": "Accountancy",
         "title": (
-            "Revise Accounting for Partnership Firms: Fundamentals. "
-            "Focus on interest on capital, interest on drawings, "
-            "partner's salary, commission and profit-sharing ratio. "
-            "Solve at least 5 numerical questions."
+            "Revise one accounting chapter: 'Accounting for Partnership Firms'. "
+            "Watch this question practise video. of book 1 "
+            "pause and first solve yourself, then check the solution. "
+            "Solve at least 5 numerical questions. "
         ),
-        "minutes": 60,
-        "url": ""
+        "minutes": 100,
+        "url": "https://youtu.be/eJa9ebwZ-ew?si=RW_LDmiMZN8ju2aR"
     },
 
     {
@@ -84,12 +82,12 @@ DAY_1_TASKS = [
     {
         "subject": "Practice & Assessment",
         "title": (
-            "Choose your weakest subject and solve 5 to 8 CBSE "
-            "previous-year questions under timed conditions. "
+            "Take NCERT maths and solve 5 to 8 CBSE "
+            "previous-year questions under timed conditions. use link to download last year papers. "
             "Check your answers and note down your mistakes."
         ),
         "minutes": 45,
-        "url": ""
+        "url": "https://www.cbse.gov.in/cbsenew/question-paper.html"
     }
 
 ]

@@ -3,12 +3,12 @@
 FlexiTarget - Daily Study Tasks
 Day 1: Class 12 Commerce with Mathematics
 
-Total focused study time: 360 minutes (6 hours).
-Add your own video and study resource links in the URL fields.
+Total focused study time: 430 minutes (7 hours 10 minutes).
 """
 
 DAY_1_TASKS = [
 
+    # TASK 1
     {
         "subject": "Mathematics",
         "title": (
@@ -20,6 +20,7 @@ DAY_1_TASKS = [
         "url": "https://youtu.be/n5lp-jGWoz4?si=xKagWROhiTkcJa1E"
     },
 
+    # TASK 2
     {
         "subject": "Mathematics",
         "title": (
@@ -33,6 +34,7 @@ DAY_1_TASKS = [
         "url": "https://youtu.be/lnR343-9vFY?si=Es0GdEwXGke9_sM7"
     },
 
+    # TASK 3
     {
         "subject": "Business Studies",
         "title": (
@@ -43,6 +45,7 @@ DAY_1_TASKS = [
         "url": "https://www.cbse.gov.in/cbsenew/question-paper/2026/XII/Business_Studies.zip"
     },
 
+    # TASK 4
     {
         "subject": "English Core",
         "title": (
@@ -55,6 +58,7 @@ DAY_1_TASKS = [
         "url": ""
     },
 
+    # TASK 5
     {
         "subject": "Accountancy",
         "title": (
@@ -67,6 +71,7 @@ DAY_1_TASKS = [
         "url": "https://youtu.be/eJa9ebwZ-ew?si=RW_LDmiMZN8ju2aR"
     },
 
+    # TASK 6
     {
         "subject": "Economics",
         "title": (
@@ -79,6 +84,7 @@ DAY_1_TASKS = [
         "url": ""
     },
 
+    # TASK 7
     {
         "subject": "Practice & Assessment",
         "title": (
@@ -93,7 +99,5 @@ DAY_1_TASKS = [
 ]
 
 
-# Additional tasks available to the planner.
-# The planner can use this list when the student requests more tasks.
-
+# No additional tasks yet.
 EXTRA_TASKS = []

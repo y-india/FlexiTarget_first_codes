@@ -1,6 +1,6 @@
 
 import streamlit as st
-
+import time
 
 # --------------------------------------------------
 # PAGE CONFIGURATION
@@ -416,7 +416,7 @@ current_status = st.text_area(
 st.markdown("---")
 
 if st.button(
-    "Create my study plan",
+    "Make my planner",
     type="primary",
     use_container_width=True
 ):
@@ -435,48 +435,38 @@ if st.button(
 
     else:
 
-        # Save the complete student profile.
-        st.session_state.student = {
-            "name": name.strip(),
+        with st.spinner(
+            "FlexiTarget is preparing your personalized study planner..."
+        ):
 
-            "stream": stream,
+            # Display the loading spinner for 12 seconds.
+            time.sleep(12)
 
-            "subjects": selected_subjects,
+            st.session_state.student = {
+                "name": name.strip(),
+                "stream": stream,
+                "subjects": selected_subjects,
+                "subjects_text": ", ".join(selected_subjects),
+                "last_exam": last_exam.strip(),
+                "goal_type": goal_type,
+                "target": (
+                    int(target)
+                    if goal_type == "I want to score X marks"
+                    else None
+                ),
+                "daily_hours": int(daily_hours),
+                "weak_subjects": weak_subjects,
+                "weak_subjects_text": ", ".join(weak_subjects),
+                "current_status": current_status.strip()
+            }
 
-            "subjects_text": ", ".join(selected_subjects),
+            st.session_state.day_number = 1
+            st.session_state.available_hours_today = int(daily_hours)
+            st.session_state.extra_tasks = []
+            st.session_state.task_checks = {}
 
-            "last_exam": last_exam.strip(),
-
-            "goal_type": goal_type,
-
-            "target": (
-                int(target)
-                if goal_type == "I want to score X marks"
-                else None
-            ),
-
-            "daily_hours": int(daily_hours),
-
-            "weak_subjects": weak_subjects,
-
-            "weak_subjects_text": ", ".join(weak_subjects),
-
-            "current_status": current_status.strip()
-        }
-
-        # Initialize the planner.
-        st.session_state.day_number = 1
-        st.session_state.available_hours_today = int(daily_hours)
-        st.session_state.extra_tasks = []
-        st.session_state.task_checks = {}
-
-        # Open the planner page.
         st.switch_page("pages/planner.py")
 
-
-# --------------------------------------------------
-# BACK BUTTON
-# --------------------------------------------------
 
 if st.button("Back to sign in"):
     st.switch_page("app.py")
